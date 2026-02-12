@@ -32,3 +32,5 @@ const search = (query) => {
     return clients.filter(client => client.name.toLowerCase().includes
 (lowerQuery));
 }
+
+//Completes the assignment.
