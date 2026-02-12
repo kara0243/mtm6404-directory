@@ -26,4 +26,9 @@ const info = (index) => {
     return clients.find((client, i) => i === index);
 }
 
-
+// search function
+const search = (query) => {
+    const lowerQuery = query.toLowerCase();
+    return clients.filter(client => client.name.toLowerCase().includes
+(lowerQuery));
+}
